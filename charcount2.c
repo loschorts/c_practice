@@ -6,15 +6,15 @@ int main(){
 	int newlines = 0;
 	int blanks = 0;
 	while ((c = getchar()) != EOF) {
-		if (c = ' '){
+		if (c == ' '){
 			blanks++;
 		}
-		if (c = '\n'){
+		if (c == '\n'){
 			newlines++;
 		}
-		if (c = '\t'){
+		if (c == '\t'){
 			tabs++;
 		}
 	}
-	printf("%d\t%d\t%d", tabs, newlines, blanks);
+	printf("\n%d\t%d\t%d\n", blanks, tabs, newlines);
 }
